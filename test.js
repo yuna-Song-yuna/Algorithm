@@ -1,12 +1,10 @@
-function solution(n)
-{
-    var answer = 0;
+var arr = ['foo', 'hello', 'diamond', 'A']
+var arr2 = arr.reduce(function(pre, value){
+    pre.push(value.length);
+    return pre;
+}, []);
+console.log(arr2)
 
-    let arr = n.toString().split("");
 
-    for(let i = 0; i < arr.length; i++){
-        answer += parseInt(arr[i]);
-    };
 
-    return answer;
-}
+
